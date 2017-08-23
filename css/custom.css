@@ -36,6 +36,11 @@
 .white-color {
   color: #fff;
 }
+
+.active a{
+    background: #007ee5 !important;
+}
+
 .vertical-divider {
     border-right: 2px solid #f8f8f8;
 }
@@ -67,6 +72,14 @@
 .content-padding {
 padding-left: 7px;
 padding-right: 2px;
+}
+
+.padding-top{
+  padding-top:10px;
+}
+
+.margin-less{
+  margin-top:-40px;
 }
 
 #content-title {
@@ -377,6 +390,10 @@ box-sizing: border-box;
 .red-color {
 	color:red;
 
+}
+
+.grey-color{
+  color:;
 }
 
 .btn-social {
@@ -752,7 +769,7 @@ color: green !important;
 
 /**media qeury start**/
 
-/*
+
 @media only screen and (max-width: 500px) {
     .serach-res{
       width: 100%;
@@ -776,26 +793,34 @@ color: green !important;
 
 /* ===================== CSS For Get Insurance Area ========================= */
 .location {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .tutor-display-search{
-  background: #FAFAFA;
-  padding: 30px;
+  background: #F2F3F4;
+  padding:30px;
+  margin: 60px 2px 20px 2px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 500px) 
+{
+
+.tutor-display-search{
+  padding:15px 0px 15px 0px;
+  margin: 20px 2px 20px 2px;
+  border-radius: 4px;
+  }
+}
+
+.tutor-search-result{
+  margin-top:30px;
 }
 
 .light-black-color {
   color:#A9A9A9;
 }
 
-.tutor-dislay-unit {
-  background: #fff;
-  margin-bottom: 30px;
-  text-align: justify;
-  transition: 1s;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
 
 .tutor-dislay-unit:hover {
   box-shadow: 0px 0px 20px #AFECD4;
@@ -839,9 +864,6 @@ color: green !important;
 
 .tutor-display-text {
   padding: 15px 15px 30px 15px;
-    border-left: 2px solid #EAEAEA;
-    border-right: 2px solid #EAEAEA;
-    border-bottom: 2px solid #EAEAEA;
 }
 
 .tutor-display-text h4 {
@@ -859,11 +881,42 @@ color: green !important;
   padding: 0px;
 }
 
-a.insurance-btn {
+
+
+/*---couse-search css---*/
+
+.tutor-search {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+}
+
+.tutor-search-bar{
+  margin-top:-13px;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.find-tutor {
+    background: #eef2f5;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.find-tutor h3{
+  color:#007EE5;
+}
+
+a.cateroty-btn {
   color: #007EE5;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
+  text-align: right;
 }
 
 .tutor-display-text .insurance-btn {
@@ -905,35 +958,6 @@ a.insurance-btn {
 }
 
 
-.btn-tutor-bottom {
-  background: #007EE5;
-  margin:5px 0px 5px 0px;
-  
-  font-weight: bolder;
-  color: #fff;
-}
-
-.btn-phone-bottom {
-  border: 1px solid blue;
-  border-radius: 5px;
-  
-  margin-left: 10px;
-  background: white;
-  color:black;
-  padding-top: 10px;
-}
-
-/*
-
-.btn-tutor {
-    background: #007EE5;
-    margin:5px 0px 5px 0px;
-    padding-top: -10px;
-    height: 45px;
-    font-weight: bolder;
-
-}
-
 .phone{
   background: grey; 
   border-radius: 50%; 
@@ -973,11 +997,6 @@ a.insurance-btn {
   margin-right: 40px;
 }
 
-.Category-Area {
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 120px 0px 0px 0px;
-  text-align: center;
-}
 
 #custom-search-input {
     margin:0;
@@ -1018,8 +1037,6 @@ a.insurance-btn {
 }
 
 
-
-
 .Page{
   margin: 0 auto;
 }
@@ -1027,7 +1044,7 @@ a.insurance-btn {
 footer {
     background: #48525C;
     color: white;
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 50px 0px;
     margin-top: 30px;
 }
 
@@ -1035,28 +1052,10 @@ ul {
     list-style: none;
 }
 
-.active a{
-    background: #007EE5 !important;
-}
 
 /* ================== Get Insurance Area CSS End Here ======================= */
 
 /* ======================= CSS Styling End Here ============================= */
-
-/*
-.tutor {
-    background: #EEF2F5;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-}
-
-.tutor h3{
-  color:#007EE5;
-}
-
-
 
 
 .footer-text{
@@ -1079,9 +1078,177 @@ ul {
 }
 
 
-
-
-
 .color4{
-  color:white;
+  color:#ffffff;
 }
+
+
+/*----start css for new3 + 4-----*/
+
+.become-math-tutor{
+  height: 90vh;
+  transform:translateY(40%);
+}
+
+
+.circle{
+  height: 250px;
+  width: 250px;
+  background: #CCE5FB;
+  border-radius: 50%;
+  position: relative;
+  transform: translateX(20px);
+  transform: translateY(-80%);
+  z-index: -3;
+
+}
+
+.circle-1{
+  height: 110px;
+  width: 110px;
+  background: #CCE5FB;
+  border-radius: 50%;
+  position: relative;
+  transform: translateX(20px);
+  transform: translateY(-200%);
+  z-index: -3;
+
+}
+
+@media only screen and (max-width: 500px) 
+{
+  .become-math-tutor{
+  height: 50vh;
+  transform:translateY(10%);
+}
+
+.become-math-tutor h1{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.become-math-tutor h3{
+  font-size: 12px;
+  line-height: 30px;
+}
+
+
+}
+
+
+
+.tutor-math-important{
+  padding:60px 0px 60px 0px;
+}
+
+
+.tutor-advantage{
+  padding:60px 0px 60px 0px;
+}
+
+.tutor-faq{
+  padding:60px 0px 60px 0px;
+}
+
+.bg-grey{
+  background: #EEF2F5;
+}
+
+.color-black{
+  color: #17202A;
+}
+
+
+.tutor-request{
+  height: 280px;
+  padding: 80px 0px 80px 0px;
+}
+
+.font-upercase{
+  text-transform: uppercase;
+}
+
+.text-padding{
+  padding-bottom:30px; 
+}
+
+
+.tutor-info{
+  margin-top:100px;
+}
+
+@media only screen and (max-width: 500px) 
+{
+  .tutor-info{
+  margin-top:20px;
+}
+}
+
+.request-tutor-search
+{
+  border:1px solid #D5D8DC;
+  border-radius: 4px;
+  padding:5px;
+}
+
+.request-tutor-input{
+  padding: 4px 0px 4px 0px;
+}
+
+.btn-tutor {
+    background: #007EE5;
+    margin:5px 0px 5px 0px;
+    padding-top: -10px;
+    height: 45px;
+    width: 170px;
+    font-weight: bolder;
+
+}
+
+.btn-tutor-bottom {
+  background: #007EE5;
+  margin: -2px 0px 0px 10px;
+  font-weight: normal;
+  color: #fff;
+  height: 42px;
+  width: 150px;
+}
+
+.btn-phone-bottom {
+  border: 1px solid blue;
+  border-radius: 5px;
+  height: 42px;
+  width: 150px;
+  margin: -2px 0px 0px 10px;
+  background: #ffffff;
+  color:black;
+  padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 500px) 
+{
+
+.btn-phone-bottom {
+   
+  margin-top: 15px;
+  margin-left: -1px;
+  background: #ffffff;
+  color:black;
+  width: 170px;
+  padding-top: 10px;
+}
+
+
+.btn-tutor-bottom {
+  background: #007EE5;
+  margin: 0 auto;
+  font-weight: bolder;
+  color: #fff;
+  height: 42px;
+  width: 150px;
+}
+
+}
+
+/*end css for new4*/
